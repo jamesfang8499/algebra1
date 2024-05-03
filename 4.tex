@@ -1,0 +1,211 @@
+\chapter{附录：命题与命题的等价}
+
+\section*{命题}
+
+\subsection*{什么是命题}
+
+在初中曾经学过：
+能判断真假的语句（包括式子）叫\textbf{命题}。如：
+\begin{enumerate}[(1)]
+    \item $12>5$;\hfill     （真命题）
+    \item  3是12的约数；\hfill     （真命题）
+    \item $2=5$.\hfill（假命题）
+\end{enumerate}
+
+“真命题”也可以说成是“命题成立”；“假命题”也可以说成是“命题不成立”。
+
+\subsection*{简单命题与复合命题}
+上面举出的是一些比较简单的命题。再来看下面的一些命题：
+\begin{enumerate}[(1)]
+\setcounter{enumi}{3}
+    \item $12>5$或者$12>20$;
+    \item 3是12的约数，并且3还是15的约数；
+    \item 5不是方程$x^2=4$的根；
+    \item 若四边形是正方形，则它的四个边长相等．
+\end{enumerate}
+
+这里，命题（4）是用连词“或者”把命题“$12>5$”和命题“$12>20$”联结成了一个新命题；命题（5）是用连词“并且”把两个命题联结成了一个新命题；命题（6）是用“不是”
+来表示对命题“5是方程$x^2=4$的根”的否定而得出的新命题。
+
+“或者”、“并且”和“不是”（简记为“或”、“且”、“非”）称为\textbf{逻辑联结词}。“若”……，“则”也是逻辑联结词。
+
+不含逻辑联结词的命题称为\textbf{简单命题}。如（1）、（2）、（3），由简单命题和逻辑联结词构成的新命题称为复合命题，如（4）、（5）、（6）、（7）。
+
+\subsection*{命题的标记}
+数学上常用小写拉丁字母$p,q,r,s,\ldots$来表示命题。这样，复合命题就有下述四种形式：
+\begin{multicols}{4}
+\begin{enumerate}
+    \item “$p$或$q$”;
+    \item “$p$且$q$”;
+    \item  “非$p$”;
+    \item  “若$p$则$q$”.
+\end{enumerate}    
+\end{multicols}
+
+\begin{blk}
+ 下列复合命题中，各属上述哪一种：   
+\begin{enumerate}[(1)]
+\item 24是8与6的倍数；
+\item 5是方程$f(x)=0$的根或是方程$g(x)=0$的根；
+\item 对顶角相等；
+\item $\angle A$与$\angle B$不相等。
+\end{enumerate}
+\end{blk}
+
+\subsection*{复合命题的真假}
+\begin{enumerate}[(1)]
+    \item “$p$或$q$”——$p,q$中至少有一个为真时，就为真。如：
+\begin{itemize}
+\item “圆是直线形或多边形”是假命题；
+\item “3是12的约数或是16的约数”是真命题，
+\item “$7\ge 5$”是真命题，
+\item “$3\ge 3$是真命题。
+\end{itemize}
+\item “$p$且$q$”——$p,q$同时为真时，才为真。如：
+\begin{itemize}
+    \item 
+    “零既不是正数，又不是负数”是真命题；
+    \item “
+    $\sqrt{2}$既是正数，又是有理数”是假命题；
+    \item 
+    “3既是15的约数，又是18的约数”是真命题。    
+\end{itemize}
+    \item “非$p$”——$p$为真时，非$p$假；$p$为假时，非$p$真。
+    \item “若$p$则$q$”——由$p$能推出$q$，则称“若$p$则$q$”为真，记作$p\Rightarrow q$，否则就称“若$p$则$q$”为假.
+\end{enumerate}
+
+\begin{example}
+    指出下列复合命题的真假：
+\begin{enumerate}[(1)]
+    \item 
+“$2\le 3$”（表示$2<3$或$2=3$)\hfill（真命题）；
+\item 
+“$2\ge 2$”（表示$2>2$或$2=2$)\hfill（真命题）；
+\item $5\le 4$
+（表示$5<4$或$5=4$)\hfill（假命题）；
+\item 
+“$5>3$且$5>4$”\hfill（真命题）；
+\item 
+“24既是8的倍数，又是5的倍数”。\hfill（假命题）；
+\item 
+“三角形不是多边形”。\hfill（假命题）；
+\item 
+“1既不是质数又不是合数”.\hfill（真命题）。
+\end{enumerate}
+\end{example}
+
+\section*{开语句}
+\begin{thm}{问1}
+    下列含有变量的语句为什么不能叫做命题？试述理由。
+\begin{enumerate}[(1)]
+\item $3x<0$;
+\item $x+5=8$;
+\item $(x-2)(x+6)<0$.
+\end{enumerate}
+
+\end{thm}
+
+\begin{analyze}
+这些语句的真假随变量的取值而变化，如（1），当$x<0$时是真；当$x>0$时为假。也就是说，这些语句的真假当未确定变量的取值时不能判断，所以不能叫做命题。
+
+含有变量的语句（如方程、不等式）称为\textbf{开语句}（有的书称为条件命题）．如问1所列举的三个语句。开语句通常记作$p(x),q(x),r(x),\ldots$.
+
+对一个开语句，当给变量赋值以后，这个开语句就变成了命题。如上面的（1），当令$x=5$时，为$3\x5<0$就成了一个命题。
+
+在全集中，能使$p(x)$为真命题的变量$x$的取值范围称为开语句$p(x)$的\textbf{真值集合}，记为$\{x\mid p(x)\}$.
+\end{analyze}
+
+\begin{example}
+    写出问1中开语句的真值集合：
+\end{example}
+
+\begin{solution}
+\begin{enumerate}[(1)]
+    \item $\{x\mid p(x)\}=\{x\mid 3x<0\}=(-\infty,0)$
+    \item $\{x\mid p(x)\}=\{x\mid x+5=8\}=\{3\}$
+    \item $\{x\mid p(x)\}=\{x\mid (x-2)(x+6)<0\}=(-6,2)$
+\end{enumerate}
+\end{solution}
+
+\section*{命题的等价}
+\subsection*{命题间的逻辑关系}
+若由$p$真可以断定$q$真，则称$p$能够推出$q$，记作$p\Rightarrow q$.
+
+若$p\Rightarrow q$，且$q\Rightarrow p$，则称$p$与$q$为\textbf{等价命题}，或称命题$p$与$q$\textbf{逻辑等价}，记作$p\Longleftrightarrow q$. 若$p$与$q$不是逻辑等价，可记作$p\not\Leftrightarrow q$.
+
+
+
+
+如在$\triangle ABC$中，$a,b,c$是$\angle A,\angle B, \angle C$的对边，则
+\begin{itemize}
+    \item $\angle C=90^{\circ}\Longleftrightarrow c^2=a^2+b^2$;
+    \item $\angle C=90^{\circ}\not\Leftrightarrow a^2=b^2+c^2$;
+    \item $\angle A=90^{\circ}\Longleftrightarrow \angle B+\angle C=90^{\circ}$.
+\end{itemize}
+
+若开语句$p(x)$与$q(x)$具有相同的真值集合，则称$p(x)$与$q(x)$为\textbf{逻辑等价}，记作$p(x)\Longleftrightarrow q (x)$.
+
+\begin{example}
+    设$p(x):\; -3<2x+3\le 5$，试写出与$p(x)$逻辑等价的形式，并使结果尽量简单。
+\end{example}
+
+\begin{solution}
+\[\begin{split}
+    -3<2x+3\le 5 &\Longleftrightarrow -6<2x\le 2\\
+    &\Longleftrightarrow -3<x\le 1\\
+    &\Longleftrightarrow x\in (-3,1],
+\end{split}\]
+$\therefore\quad \{x\mid -3<2x+3\le 5\}=(-3,1]$
+\end{solution}
+
+
+\subsection*{四种命题的形式及其逻辑关系}
+在初中已学过，如果原命题用“若$p$则$q$”表示（$p$叫做原命题的条件，$q$叫做原命题的结论），则四种命题的形式就是：
+\begin{center}
+\begin{tabular}{p{.2\textwidth}p{.3\textwidth}}
+    原命题&“若$p$则$q$”;\\
+逆命题&“若$q$则$p$”;\\
+否命题&“若非$p$则非$q$”\\
+逆否命题& “若非$q$则非$p$”
+\end{tabular}
+\end{center}
+
+看一个例子.如果
+\begin{center}
+\begin{tabular}{p{.2\textwidth}p{.4\textwidth}p{.2\textwidth}}
+  原命题是  & “若$a=0$，则$ab=0$” &（真命题）\\
+逆命题是 &“若$ab=0$，则$a=0$”  &（假命题）\\
+否命题是 & “若$a\ne 0$，则$ab\ne 0$” &（假命题）\\
+逆否命题是 & “若$ab\ne 0$，则$a\ne 0$” &（真命题）\\
+\end{tabular}
+\end{center}
+
+在初中我们还学过，两个互为逆否的命题是等价的（即它们是同真或同假）。由此，
+\begin{itemize}
+    \item 原命题$\Longleftrightarrow$逆否命题，
+    \item 逆命题$\Longleftrightarrow$否命题。
+\end{itemize}
+
+四个命题之间的关系是：
+\begin{center}
+\begin{tikzpicture}[>=stealth]
+\node (A)[draw, rectangle, text width=2.5cm, align=center] at (0,0) {原命题\\若$p$则$q$};
+\node (B)[draw, rectangle, text width=2.5cm, align=center] at (7,0) {逆命题\\若$q$则$p$};
+\node (C)[draw, rectangle, text width=2.5cm, align=center] at (0,-4) {否命题\\若非$p$则非$q$};
+\node (D)[draw, rectangle, text width=2.5cm, align=center] at (7,-4) {逆否命题\\若非$p$则非$q$};
+\draw[<->, very thick](A)--node[above]{互逆}(B);
+\draw[<->, very thick](C)--node[below]{互逆}(D);
+\draw[<->, very thick](C)--node[left]{互否}(A);
+\draw[<->, very thick](B)--node[right]{互否}(D);
+\draw[<->, very thick](A)--node[above, sloped, pos=.25]{互为逆否}(D);
+\draw[<->, very thick](B)--node[below, sloped, pos=.25]{互为逆否}(C);
+
+
+\end{tikzpicture}
+\end{center}
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+\begin{landscape}
+
+
+
+\begin{tikzpicture}[>=stealth]
+\node[draw, rectangle](A) at (-5, 5)[text width=2cm, align=center]{对应类型\\“1对1”\\“多对1”\\“1对多”\\其他};
+\node[draw, rectangle](B) at (0, 5)[text width=2.5cm ]{从$A$到$B$的映射：任取$x\in A$，都有唯一的$y\in B$，使$\map{f}{x}{y}$，记作$\map{f}{A}{B}$};
+\node[draw, rectangle](C) at (5, 5)[text width=2cm, align=center]{从$A$到$B$的一一映射\\$\map{f}{A}{B}$};
+\node[draw, rectangle](D) at (9, 5)[text width=2.5cm, align=center]{映射\\$\map{f}{A}{B}$\\的逆映射\\$\map{f^{-1}}{B}{A}$};
+
+\draw[->, very thick](A)--node[above]{任意性}(B);
+\draw[->, very thick](B)--node[above]{单射}(C);
+\draw[->, very thick](C)--(D);
+\draw(A)--node[below]{唯一性}(B);
+\draw(B)--node[below]{满射}(C);
+
+\node[draw, rectangle] (E1) at (0,0){函数的定义};
+\node[draw, rectangle] (E2) at (9,0){反函数的定义};
+
+\draw[->, very thick](B)--node{$A$, $B$都是非空数集时}(E1);
+\draw[->, very thick](D)--(E2);
+\draw[->, very thick](E1)--(E2);
+\end{tikzpicture}
+\end{landscape}
+
+
+\newpage
+
+\begin{tikzpicture}[>=stealth]
+\node[draw, rectangle](A) at (1,3+.75)[text width=1.5cm, align=center] {复合函数}; 
+\node[draw, rectangle](B) at (1,0.75)[text width=1.5cm, align=center] {函数的\\定义}; 
+\node[draw, rectangle](C) at (1,-3+.75)[text width=1.5cm, align=center] {函数\\表示法}; 
+\draw[->, very thick](B)--(A);
+\draw[->, very thick](B)--(C);
+
+\node (E1) at (4,6)[right]{定义域（求法：归结为解不等式组）};
+\node (E2) at (4,4.5)[right]{值域$\Bigg\{$};
+\node (E21) at (5.25,5)[right]{值域的定义、求法};
+\node (E22) at (5.25,4.5)[right]{特殊值（最大值、最小值）的求法};
+\node (E23) at (5.25,4)[right]{给函数值的范围，求自变量的取值范围};
+\node (E3) at (4,2.75)[right]{增减性$\Big\{$};
+\node (E31) at (5.5,3)[right]{单调函数的定义、实质及判断};
+\node (E32) at (5.5,2.5)[right]{单调区间的求法};
+\node (E4) at (4,1.25)[right]{奇偶性$\Big\{$};
+\node (E41) at (5.5,1.5)[right]{奇（偶）函数的定义、实质及判断};
+\node (E42) at (5.5,1)[right]{奇偶性的应用};
+
+\node (E5) at (4,.25)[right]{周期性（三角中待学）};
+
+\node (E6) at (4,-1)[right]{画法$\Big\{$};
+\node (E7) at (4,-2.5)[right]{看图认性质：函数性质与图象的一致性};
+\node (E61) at (5.25,-.75)[right]{先讨论函数性质};
+\node (E62) at (5.25,-1.25)[right]{再用描点法画图$\Big\{$};
+
+\node (E71) at (8.5,-1)[right]{体现性质};
+\node (E72) at (8.5,-1.5)[right]{标记特殊点};
+
+\draw[decorate, very thick, decoration={brace, amplitude=10pt}](4,.25)--node[left=10pt]{性质}(4,6);
+
+\draw[decorate, very thick, decoration={brace, amplitude=5pt}](4,-2.5)--node[left=7pt]{图象}(4,-1);
+
+\draw[decorate, decoration={brace, amplitude=10pt}, very thick](2.5,-1.75)--(2.5,3);
+
+
+\end{tikzpicture}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
